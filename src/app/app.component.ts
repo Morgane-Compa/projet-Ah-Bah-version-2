@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BasketService } from './services/basket/basket.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'projet-ah-bah';
+
+  constructor(private basketService: BasketService) {}
+
+
 }
