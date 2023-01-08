@@ -20,8 +20,10 @@ import { PaiementComponent } from './pages/paiement/paiement.component';
 import { PaiementFormComponent } from './components/paiement-form/paiement-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { PaiementSuccessComponent } from './pages/paiement-success/paiement-success.component';
-import { CategoryComponent } from './components/category/category.component';
 import { ProductDetailsComponent } from './pages/product-details/product-details.component';
+import { CategoryComponent } from './pages/category/category.component';
+import { HeaderCategoryComponent } from './components/header-category/header-category.component';
+import { HeaderAccueilComponent } from './components/header-accueil/header-accueil.component';
 
 
 @NgModule({
@@ -43,8 +45,10 @@ import { ProductDetailsComponent } from './pages/product-details/product-details
     CategoryComponent,
     PaiementComponent,
     PaiementFormComponent,
-    PaiementSuccessComponent
-    ProductDetailsComponent
+    PaiementSuccessComponent,
+    ProductDetailsComponent,
+    HeaderCategoryComponent,
+    HeaderAccueilComponent
     
   ],
   imports: [
