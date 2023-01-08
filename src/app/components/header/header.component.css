@@ -6,7 +6,7 @@ a:hover{
 
 header {
     width: 100%;
-    height: 957px;
+    height: 720px;
     position: relative;
 }
 
@@ -19,6 +19,7 @@ header {
     position: absolute;
     right: 10%;
     top: 75px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0.5px 0.5px 0.5px 0.6px; 
 }
 
 .navLink {
