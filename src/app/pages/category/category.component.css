@@ -1,4 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, li, ul{
+    text-decoration: none;
+}
+
 img{
     height: 299px;
     width: 444px;
+    max-width: 100%;
+    display: block;
 }
+
+main{
+    width: min(1536px,100%);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.allPic{
+    margin-top: 89px;
+    flex-wrap: wrap;
+}
+
+.allPic img {
+    width: 444.41px;
+    height: 299.15px;
+}
+
