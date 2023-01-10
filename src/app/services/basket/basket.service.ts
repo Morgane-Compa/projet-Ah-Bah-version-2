@@ -64,13 +64,12 @@ export class BasketService {
       basket.push(basketProduct);
     }
     //j'enregistre
-    this.saveBasket(basket);
-    
+    this.saveBasket(basket); 
   }
 
   //La fonction pour avoir le total de mon panier
   getTotalBasket() {
-    
+
   }
 
 }
