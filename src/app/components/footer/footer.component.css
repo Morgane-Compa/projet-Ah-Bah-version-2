@@ -13,6 +13,11 @@ footer {
     justify-content: space-between;
 }
 
+footer img{
+    height: 40px;
+    width: 40px;
+}
+
 .footerText {
     width: 100%;
     padding: 60px 8% 75px 0;
