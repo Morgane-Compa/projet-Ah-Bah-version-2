@@ -18,7 +18,7 @@ export const PRODUCTS: Products[] = [
     },
     {
         id: 2,
-        productName: "opal",
+        productName: "Opal",
         image: "assets/img/opal.png",
         description: "Collant gris a reflet opal. Montrez ainsi au monde que vous êtes une vraie pière précieuse",
         price: 20,
@@ -60,7 +60,7 @@ export const PRODUCTS: Products[] = [
         id: 7,
         productName: "Catherine",
         image: "assets/img/catherine.png",
-        description: "collants transparents a couleur flash pour ajouter du peps a vos tenues",
+        description: "Collants transparents a couleur flash pour ajouter du peps a vos tenues",
         price: 15,
         isDispo: true
     },
@@ -68,7 +68,7 @@ export const PRODUCTS: Products[] = [
         id: 8,
         productName: "Flamboyante",
         image: "assets/img/flamboyante.png",
-        description: "collants transparents à motif originaux",
+        description: "Collants transparents à motif originaux",
         price: 17,
         isDispo: true
     },
@@ -76,7 +76,7 @@ export const PRODUCTS: Products[] = [
         id: 9,
         productName: "Minie",
         image: "assets/img/minie.png",
-        description: "collants transparents à motif coeur pour pimenter vos tenues",
+        description: "Collants transparents à motif coeur pour pimenter vos tenues",
         price: 17,
         isDispo: true
     },
@@ -100,7 +100,7 @@ export const PRODUCTS: Products[] = [
         id: 11,
         productName: "Plenitude",
         image: "assets/img/plenitude.png",
-        description: "leging de couleurs foncé conçu pour votre confort et votre bien être en toutes circonstances",
+        description: "Leging de couleurs foncé conçu pour votre confort et votre bien être en toutes circonstances",
         price: 16,
         isDispo: true
     },
@@ -108,7 +108,7 @@ export const PRODUCTS: Products[] = [
         id: 12,
         productName: "Rachelle",
         image: "assets/img/rachelle.png",
-        description: "leging de couleurs rose a motif blanc conçu pour votre confort et votre bien être en toutes circonstances",
+        description: "Leging de couleurs rose a motif blanc conçu pour votre confort et votre bien être en toutes circonstances",
         price: 17,
         isDispo: true
     },
@@ -124,7 +124,7 @@ export const PRODUCTS: Products[] = [
         id: 11,
         productName: "Robine",
         image: "assets/img/robine.png",
-        description: "leging de couleurs marron conçu pour un confort optimale les jours off",
+        description: "Leging de couleurs marron conçu pour un confort optimale les jours off",
         price: 16,
         isDispo: true
     },

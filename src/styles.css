@@ -1,16 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
-:root {
+ :root {
     --color-bg: #FFF0EB;
     --color-footer: #EBD4D1;
     --color-footer2: #DFBDB9;
     --color-text: #61504B;
     --color-clair: #FFF9F6;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 body {
     margin: 0;
     padding: 0;
     font-family: 'Martel', serif;
     color: var(--color-text);
     box-sizing: border-box;
+=======
+body{
+    background-color: var(--color-bg);
+    font-family: 'Martel', serif;
+}
+
+h1,h2,h3{
+    font-family: 'Catamaran', sans-serif;
+>>>>>>> 19c3eed76fad53bbc195f8ca3c72e8e1255434d0
 }
