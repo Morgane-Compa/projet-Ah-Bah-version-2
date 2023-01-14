@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Products } from 'src/app/mocks/products/products.mock';
-import { BasketService } from 'src/app/services/basket/basket.service';
+import { BasketProduct, BasketService } from 'src/app/services/basket/basket.service';
 import { ProductService } from 'src/app/services/products/product.service';
 
 @Component({
@@ -13,6 +13,7 @@ export class ProductDetailsComponent {
 
   product?: Products;
   quantity: number = 1;
+  totalPrice: number = 0;
   //j'appelle les éléments qui vont me servir a créer des fonctions dans ce fichier
   constructor(
     private basketService: BasketService, 
@@ -31,9 +32,13 @@ export class ProductDetailsComponent {
   addToBasket() {
     // on doit créer une condition au cas ou le produit n'existe pas
     //on lui dit de rien retourner quand le produit n'existe pas
-    if(this.product) return;
-
-
+    if(!this.product) return;
+      const basketProduct: BasketProduct = {
+        product: this.product,
+        productQuantity: this.quantity,
+        totalPrice: this.totalPrice
+      }
+      this.basketService.addProductToBasket(basketProduct);
   }
 }
       
