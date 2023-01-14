@@ -6,3 +6,11 @@
     --color-text: #61504B;
     --color-clair: #FFF9F6;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Martel', serif;
+    color: var(--color-text);
+    box-sizing: border-box;
+}

@@ -30,6 +30,7 @@ export class BasketService {
 
   }
 
+
   //la fonction pour créer mon panier
  private createBasket() {
     const newBasket: [] = [];
@@ -69,7 +70,7 @@ export class BasketService {
 
   //La fonction pour avoir le total de mon panier
   getTotalBasket() {
-
+    
   }
 
 }

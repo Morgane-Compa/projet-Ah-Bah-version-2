@@ -1,0 +1,212 @@
+
+h1, h2, h3, h4{
+    font-family: 'Catamaran', sans-serif;
+}
+
+h2 {
+    font-size: 48px;
+}
+
+main {
+    background-color: var(--color-bg);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* Mon main */
+
+/* 1ere section */
+.newArticles {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.newArticles div {
+    background-color: var(--color-clair);
+    display: flex;
+    gap: 25px;
+    padding: 39px;
+}
+
+.arrow {
+    width: 111px;
+    height: 111px;
+}
+
+/* 2eme section */
+
+ 
+.collections {
+    width: 100%;
+    height: 685px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.collections div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+
+
+.imgcollection1 {
+    width: 100%;
+}
+
+.imgcollection2 {
+    width: 100.08%;
+}
+
+.extravagant {
+    min-width: 35%;
+    background-color: #BA8A70;
+    align-self: flex-start;
+}
+
+.classic {
+    min-width: 32%;
+    background-color: #EBD4D1;
+}
+
+
+.casual {
+    min-width: 33%;
+    align-self: flex-end;
+    background-color: #762625;
+}
+ 
+
+
+/* section journal */
+.journal {
+    width: 80%;
+    background-color: var(--color-clair);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    margin-bottom: 50px;
+}
+
+.journal img {
+    padding: 25px;
+}
+
+.journal h3 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.journal p {
+    font-size: 24px;
+}
+
+
+/* end */
+
+.desktop {
+    width: min(1270px,80%);
+}
+.phone {
+    display: none;
+}
+
+/* footer */
+footer {
+    background-color: var(--color-footer);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerText {
+    width: 100%;
+    padding: 60px 8% 75px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.empty {
+    width: 12.2%;
+    background-color: var(--color-footer2);
+    
+}
+
+.semibold {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.barreEmail {
+    background-color: var(--color-bg);
+    border: 2px solid var(--color-footer2);
+}
+
+.boutton {
+    background-color: var(--color-footer2);
+    border: none;
+    color: var(--color-text);
+    padding: 4px;
+}
+
+
+
+
+
+/* responsive */
+
+@media (max-width: 990px) {
+
+    /* header */
+    .navLink {
+        display: none;
+    }
+
+    .menuBurger{
+        display: block;
+    }
+
+    .menuBurger span {
+        display: block;
+    }
+
+
+    /* Le main */
+
+    .journal {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .phone {
+        display: block;
+    }
+
+
+    /* footer */
+    .footerText {
+        flex-direction: column;
+    }
+
+    footer form input {
+        width: 100%;
+        padding: 0;
+    }
+
+}
