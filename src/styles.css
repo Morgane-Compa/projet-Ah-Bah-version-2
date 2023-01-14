@@ -13,14 +13,7 @@
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Martel', serif;
-    color: var(--color-text);
-    box-sizing: border-box;
-=======
+
 body{
     background-color: var(--color-bg);
     font-family: 'Martel', serif;
@@ -28,5 +21,5 @@ body{
 
 h1,h2,h3{
     font-family: 'Catamaran', sans-serif;
->>>>>>> 19c3eed76fad53bbc195f8ca3c72e8e1255434d0
+
 }
