@@ -1,0 +1,94 @@
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produit .flex{
+    justify-content: flex-start;
+}
+
+.flex .collant img{
+    width: 60%;
+}
+
+.collant{
+    gap: 50px;
+    margin-top: 35px;
+}
+
+.produit .presentation{
+    width: 741px;
+}
+
+.description{
+    width: 40%;
+}
+
+.text{
+    width: 390px;
+    height: 321px;
+    align-items: flex-start;
+    gap: 30px;
+    font-size: 20px;
+}
+
+
+.cercleRed{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: red;
+}
+
+.cerclePink{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgb(255, 44, 170);
+}
+
+.cercleYellow{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgb(241, 225, 11);
+}
+
+.cercleBlue{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    background: rgb(11, 203, 241);
+}
+
+.presentationProduit{
+    gap: 40px;
+}
+
+.produit{
+    margin-top: 89px;
+    margin-left: 69px;
+    flex-wrap: wrap;
+}
+
+.autreProduit{
+    height: 500px;
+}
+
+.autreProduit div{
+    background: white;
+    width: 70%;
+    margin: auto;
+    margin-top: 15%;
+    gap: 25px;
+}
