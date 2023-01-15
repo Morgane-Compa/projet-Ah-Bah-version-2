@@ -1,0 +1,58 @@
+/* Le main */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2 {
+    font-size: 48px;
+}
+
+
+.aLaUne {
+    display: flex;
+    align-items: center;
+}
+
+.aLaUne div img {
+    width: 80%;
+    margin: 10px 10%;
+    position: relative;
+}
+
+.aLaUne div h3 {
+    font-size: xx-large;
+    width: 70%;
+    position: absolute;
+    top: 1400px;
+    left: 20%;
+}
+
+.arrow {
+    width: 102px;
+    height: 102px;
+}
+
+/* 2eme section */
+
+.articles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin: auto; */
+}
+
+.articles div {
+    background-color: #FFF9F6;
+    height: 598px;
+    max-width: 365px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+    font-size: 35px
+}
+
+
