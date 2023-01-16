@@ -122,46 +122,6 @@ main {
     display: none;
 }
 
-/* footer */
-footer {
-    background-color: var(--color-footer);
-    display: flex;
-    justify-content: space-between;
-}
-
-.footerText {
-    width: 100%;
-    padding: 60px 8% 75px 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-.empty {
-    width: 12.2%;
-    background-color: var(--color-footer2);
-    
-}
-
-.semibold {
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.barreEmail {
-    background-color: var(--color-bg);
-    border: 2px solid var(--color-footer2);
-}
-
-.boutton {
-    background-color: var(--color-footer2);
-    border: none;
-    color: var(--color-text);
-    padding: 4px;
-}
-
-
-
-
 
 /* responsive */
 
@@ -195,16 +155,4 @@ footer {
     .phone {
         display: block;
     }
-
-
-    /* footer */
-    .footerText {
-        flex-direction: column;
-    }
-
-    footer form input {
-        width: 100%;
-        padding: 0;
-    }
-
 }

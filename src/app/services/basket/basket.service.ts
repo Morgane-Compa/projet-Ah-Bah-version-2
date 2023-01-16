@@ -50,7 +50,6 @@ export class BasketService {
     }
   }
 
-
   //la fonction pour ajouter des articles au panier
   addProductToBasket(basketProduct: BasketProduct) {
     const basket = this.getBasket();
@@ -72,5 +71,4 @@ export class BasketService {
   getTotalBasket() {
     
   }
-
 }
