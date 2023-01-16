@@ -1,0 +1,6 @@
+.tiny{
+    font-size: 10px;
+    margin: 25px;
+    margin-left: 45px;
+    width: min(900px, 100%);
+}
