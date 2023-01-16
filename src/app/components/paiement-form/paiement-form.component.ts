@@ -6,6 +6,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
   templateUrl: './paiement-form.component.html',
   styleUrls: ['./paiement-form.component.css']
 })
+
 export class PaiementFormComponent {
   
   paiementForm!: FormGroup;
@@ -33,18 +34,18 @@ export class PaiementFormComponent {
     })
   }
 
-  pay(){
+  onPay(){
+    this.router.navigate(['/paiement-succes'])
     this.validationError = [];
     console.log(this.paiementForm.value);
-    // this.router.navigate(['/paiement-succes'])
 
     if(this.paiementForm.invalid){
-      Object.keys(this.paiementForm.controls).forEach((control)=>{
-        const currentInput = this.paiementForm.get(control);
+      Object.keys(this.paiementForm.controls).forEach((input)=>{
+        const currentInput = this.paiementForm.get(input);
         if(currentInput && currentInput.status === "INVALID"){
-          // this.validationError.push(control);
+          //  this.validationError.push(input);
         }
-        console.log(control,currentInput);
+        console.log(input,currentInput);
       })
       console.log(this.validationError)
     }else{
