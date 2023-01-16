@@ -18,7 +18,6 @@ a{
     color: black;
 }
 
-
 body{
     background-color: var(--color-bg);
     font-family: 'Martel', serif;
@@ -26,5 +25,5 @@ body{
 
 h1,h2,h3,h4,h5,h6{
     font-family: 'Catamaran', sans-serif;
-
+    margin: 70px auto;
 }
