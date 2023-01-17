@@ -1,13 +1,24 @@
 <main>
+    <img class="entete" src="assets/img/img-page-category-details/entete.png" alt="img-tete">
     <ul>
-        <li *ngFor="let item of products" class="col m4 s6">
-            <article>
-                <h3>{{item.productName}}</h3>
-                <p>{{item.price}} € </p>
-                <p>{{item.description}}</p>
-                <a routerLink="*"></a><img src="{{item.image}}" alt="img de produits">
+
+        
+
+
+        <li *ngFor="let item of products">
+            <article class="image-container grid">
+                <a routerLink="product-details/{{item.id}}"><img class="product-details" src="{{item.image}}" alt="img de produits"></a>
+                <div class="img-description">
+                    <a routerLink="/product-details/{{item.id}}">
+                        <h3>{{item.productName}}</h3>
+                        <p>{{item.description}}</p>
+                        <br>
+                        <p>{{item.price}} €
+                        <br>
+                    </a>
+                    <button>Ajouter au panier</button>
+                </div>
             </article>
         </li>
     </ul>
 </main>
-
