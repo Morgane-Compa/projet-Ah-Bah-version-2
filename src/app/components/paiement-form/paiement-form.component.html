@@ -9,7 +9,7 @@
             <!-- Livraison -->
             <div>
                 <label for="contact_email">*Email</label>
-                <input type="text" id="contact_email" formControlName="contact_email" [class.hasError]="validationError.includes">
+                <input type="text" id="contact_email" formControlName="contact_email" [class.hasError]="validationError.includes('contact_email')">
             </div>
             <button type="submit">Envoyer</button>
         </article>
@@ -21,31 +21,31 @@
 
             <div>
                 <label for="delivery_firstname">*Prénom</label>
-                <input type="text" id="delivery_firstname" formControlName="delivery_firstname" [class.hasError]="validationError.includes">
+                <input type="text" id="delivery_firstname" formControlName="delivery_firstname" [class.hasError]="validationError.includes('delivery_firstname')">
             </div>
             <div>
                 <label for="delivery_name">*Nom</label>
-                <input type="text" id="delivery_name" formControlName="delivery_name" [class.hasError]="validationError.includes">
+                <input type="text" id="delivery_name" formControlName="delivery_name" [class.hasError]="validationError.includes('delivery_name')">
             </div>
             <div>
                 <label for="delivery_country">*Pays / Région</label>
-                <input type="text" id="delivery_country" formControlName="delivery_country" [class.hasError]="validationError.includes">
+                <input type="text" id="delivery_country" formControlName="delivery_country" [class.hasError]="validationError.includes('delivery_country')">
             </div>
             <div>
                 <label for="delivery_street">*Adresse</label>
-                <input type="text" id="delivery_street" formControlName="delivery_street" [class.hasError]="validationError.includes">
+                <input type="text" id="delivery_street" formControlName="delivery_street" [class.hasError]="validationError.includes('delivery_street')">
             </div>
             <div>
                 <label for="delivery_postcode">*Code Postal</label>
-                <input type="text" id="delivery_postcode" formControlName="delivery_postcode" [class.hasError]="validationError.includes">
+                <input type="text" id="delivery_postcode" formControlName="delivery_postcode" [class.hasError]="validationError.includes('delivery_postcode')">
             </div>
             <div>
                 <label for="delivery_city">*Ville</label>
-                <input type="text" id="delivery_city" formControlName="delivery_city" [class.hasError]="validationError.includes">
+                <input type="text" id="delivery_city" formControlName="delivery_city" [class.hasError]="validationError.includes('delivery_city')">
             </div>
             <div>
                 <label for="delivery_phone">*Téléphone</label>
-                <input type="text" id="delivery_phone" formControlName="delivery_phone" [class.hasError]="validationError.includes">
+                <input type="text" id="delivery_phone" formControlName="delivery_phone" [class.hasError]="validationError.includes('delivery_phone')">
             </div>
             <a href="#mode">
                 <button>Choisir la méthode de livraison</button>
@@ -81,19 +81,19 @@
 
                 <div>
                     <label for="card_number">*Numéro de la carte</label>
-                    <input type="text" id="card_number" formControlName="card_number" [class.hasError]="validationError.includes">
+                    <input type="text" id="card_number" formControlName="card_number" [class.hasError]="validationError.includes('card_number')">
                 </div>
                 <div>
                     <label for="card_userName">*Titulaire de la carte</label>
-                    <input type="text" id="card_userName" formControlName="card_userName" [class.hasError]="validationError.includes">
+                    <input type="text" id="card_userName" formControlName="card_userName" [class.hasError]="validationError.includes('card_userName')">
                 </div>
                 <div>
                     <label for="card_expiration">*Date d'expiration</label>
-                    <input type="text" id="card_expiration" formControlName="card_expiration" [class.hasError]="validationError.includes">
+                    <input type="text" id="card_expiration" formControlName="card_expiration" [class.hasError]="validationError.includes('card_expiration')">
                 </div>
                 <div>
                     <label for="card_cvv">*Cryptogramme</label>
-                    <input type="text" id="card_cvv" formControlName="card_cvv" [class.hasError]="validationError.includes">
+                    <input type="text" id="card_cvv" formControlName="card_cvv" [class.hasError]="validationError.includes('card_cvv')">
                 </div>
 
                 <button type="submit" (click)="onPay()">Payer et passer une commande</button>
