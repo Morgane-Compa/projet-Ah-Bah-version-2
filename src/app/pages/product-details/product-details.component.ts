@@ -10,35 +10,61 @@ import { ProductService } from 'src/app/services/products/product.service';
   styleUrls: ['./product-details.component.css']
 })
 export class ProductDetailsComponent {
-
   product?: Products;
-  quantity: number = 1;
-  totalPrice: number = 0;
-  //j'appelle les éléments qui vont me servir a créer des fonctions dans ce fichier
-  constructor(
-    private basketService: BasketService, 
-    private router: Router, 
+  img?: Products;
+  img1?: Products;
+  img2?: Products;
+  img3?: Products;
+  img4?: Products;
+  img5?: Products;
+  img6?: Products;
+  img7?: Products;
+  img8?: Products;
+  img9?: Products;
+
+
+  constructor (
+    private ProductsService: ProductService,
     private activatedRoute: ActivatedRoute,
-    private productService: ProductService,
-    ) {}
+    private router: Router,
+  ){}
+
+  ngOnInit(){
+    this.initProduct();
+    // this.details = this.getDetails();
+  
+  }
+// Products
+  initProduct(){
+    const id = Number(this.activatedRoute.snapshot.paramMap.get('id'));
+    const foundProduct = this.ProductsService.getProduct(id);
+    if(foundProduct){
+      this.product = foundProduct;
+    }
+    else{
+      this.router.navigate(['not-found'])
+    }
+  }
 
 
 
-  //j'ai créé des fonctions dans le basket service, maintenant il faut que je les utilise ici
+
+
+
+// Ajouter un produit au panier
+  // addToBasket(){
+  //   // Si il n'y a pas de produit, ne fait rien
+  //   if(!this.product) return;
+  //   // Sinon on crée un nouvel objet de type BasketProduct
+  //   const basketProduct: BasketProduct = {
+  //     product: this.product,
+  //     quantity: this.quantity
+  //   }
+
+  //   // On appel la fonction addProductToBasket() du BasketService
+  //   this.basketService.addProductToBasket(basketProduct);
+  // }
 
 
   
-  // pour ajouter au panier via la fonction qu'on a créé dans le service qui s'appelle  addProductToBasket
-  addToBasket() {
-    // on doit créer une condition au cas ou le produit n'existe pas
-    //on lui dit de rien retourner quand le produit n'existe pas
-    if(!this.product) return;
-      const basketProduct: BasketProduct = {
-        product: this.product,
-        productQuantity: this.quantity,
-        totalPrice: this.totalPrice
-      }
-      this.basketService.addProductToBasket(basketProduct);
-  }
 }
-      

@@ -14,6 +14,7 @@ import { PolitiqueComponent } from './pages/politique/politique.component';
 import { ProductsComponent } from './pages/products/products.component';
 import { ProposComponent } from './pages/propos/propos.component';
 import { PaiementSuccessComponent } from './pages/paiement-success/paiement-success.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path:"categorie",
     component:CategoryComponent
+  },
+  {
+    path: "product-details/:id",
+    component: ProductDetailsComponent
   },
   {
     path:"paiement",

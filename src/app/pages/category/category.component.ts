@@ -19,5 +19,5 @@ export class CategoryComponent {
   getProducts(){
     return this.productService.getProducts();
   }
-
 }
+

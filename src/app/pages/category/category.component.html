@@ -1,16 +1,26 @@
+<app-header></app-header>
+
 <main>
-<app-header-category></app-header-category>
-<!-- <img src="src/assets/img/enteteCategorie.png" alt=""> -->
+    <img class="entete" src="/assets/img/img-page-category-details/entete.png" alt="img-tete">
+    <ul>
 
-<section class="allPic flex">
-            <article  *ngFor="let item of products" class="col m4 s6">
-                <a routerLink="/produits"><img src="{{item.image}}" alt="img de produits"></a>
-                <h3>{{item.productName}}</h3>
-                <p>{{item.price}} € </p>
-                <!-- <p>{{item.description}}</p> -->
-                <button>Ajouter au panier</button>
+        
+
+
+        <li *ngFor="let item of products">
+            <article class="image-container grid">
+                <a routerLink="product-details/{{item.id}}"><img class="product-details" src="{{item.image}}" alt="img de produits"></a>
+                <div class="img-description">
+                    <a routerLink="/product-details/{{item.id}}">
+                        <h3>{{item.productName}}</h3>
+                        <p>{{item.description}}</p>
+                        <br>
+                        <p>{{item.price}} €
+                        <br>
+                    </a>
+                    <button>Ajouter au panier</button>
+                </div>
             </article>
-</section>
-
-
+        </li>
+    </ul>
 </main>

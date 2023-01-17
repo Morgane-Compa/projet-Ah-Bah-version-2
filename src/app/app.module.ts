@@ -24,6 +24,8 @@ import { ProductDetailsComponent } from './pages/product-details/product-details
 import { CategoryComponent } from './pages/category/category.component';
 import { HeaderCategoryComponent } from './components/header-category/header-category.component';
 import { HeaderAccueilComponent } from './components/header-accueil/header-accueil.component';
+import { ProductDetailsPhotosComponent } from './components/product-details-photos/product-details-photos.component';
+import { BackButtonComponent } from './components/buttons/back-button/back-button.component';
 
 
 @NgModule({
@@ -48,7 +50,9 @@ import { HeaderAccueilComponent } from './components/header-accueil/header-accue
     PaiementSuccessComponent,
     ProductDetailsComponent,
     HeaderCategoryComponent,
-    HeaderAccueilComponent
+    HeaderAccueilComponent,
+    ProductDetailsPhotosComponent,
+    BackButtonComponent
     
   ],
   imports: [

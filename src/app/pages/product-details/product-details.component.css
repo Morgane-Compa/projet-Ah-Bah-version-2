@@ -1,0 +1,31 @@
+.entete{
+    width: clamp(414px, 100%, 1440px);
+}
+
+.product-image{
+    width: clamp(414px, 100%, 700px);
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main{
+    margin: 1em;
+
+}
+
+.photo-des{
+    width: 7em;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-container{
+    display: flex;
+}
+/* p{
+    width: 80px;
+} */
