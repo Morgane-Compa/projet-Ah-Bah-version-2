@@ -1,0 +1,21 @@
+<app-header></app-header>
+
+<img class="entete" src="/assets/img/img-page-category-details/entete.png" alt="img-tete">
+
+<main>
+    <app-back-button></app-back-button>
+
+    <div class="detail-container">
+        <app-product-details-photos></app-product-details-photos>
+        
+        <article class="flex" *ngIf="product">
+            <img class="product-image" src="{{product.image}}" alt="img de produit">
+            <div class="des">
+                <h2>{{product.productName}} - {{product.price}} €</h2>
+                <button>Ajouter au panier</button>
+                <p>{{product.description}}</p>
+            </div>
+        </article>
+
+    </div>
+</main>

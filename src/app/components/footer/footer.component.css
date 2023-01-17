@@ -3,10 +3,19 @@ a{
     color: black;
 }
 
+a:hover{
+    color: #762625;
+}
+
 footer {
     background-color: #EBD4D1;
     display: flex;
     justify-content: space-between;
+}
+
+footer img{
+    height: 40px;
+    width: 40px;
 }
 
 .footerText {

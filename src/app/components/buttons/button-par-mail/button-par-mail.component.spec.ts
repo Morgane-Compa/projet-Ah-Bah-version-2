@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CategorieComponent } from './categorie.component';
+import { ButtonParMailComponent } from './button-par-mail.component';
 
-describe('CategorieComponent', () => {
-  let component: CategorieComponent;
-  let fixture: ComponentFixture<CategorieComponent>;
+describe('ButtonParMailComponent', () => {
+  let component: ButtonParMailComponent;
+  let fixture: ComponentFixture<ButtonParMailComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CategorieComponent ]
+      declarations: [ ButtonParMailComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CategorieComponent);
+    fixture = TestBed.createComponent(ButtonParMailComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
