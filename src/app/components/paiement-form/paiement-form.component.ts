@@ -17,25 +17,25 @@ export class PaiementFormComponent {
 
   ngOnInit(){
     this.paiementForm = this.formBuilder.group({
-      contact_email: [null, [Validators.required]],
-      delivery_firstname: [null, [Validators.required]],
-      delivery_name: [null, [Validators.required]],
-      delivery_country: [null, [Validators.required]],
-      delivery_street: [null, [Validators.required]],
-      // delivery_stage: [null],
-      delivery_postcode: [null, [Validators.required]],
-      delivery_city: [null, [Validators.required]],
-      delivery_phone: [null, [Validators.required]],
-      card_number: [null, [Validators.required]],
-      card_userName: [null, [Validators.required]],
-      card_expiration: [null, [Validators.required]],
-      card_cvv: [null, [Validators.required]],
+      contact_email: ['', [Validators.required,]],
+      delivery_firstname: ['', [Validators.required]],
+      delivery_name: ['', [Validators.required]],
+      delivery_country: ['', [Validators.required]],
+      delivery_street: ['', [Validators.required]],
+      // delivery_stage: [''],
+      delivery_postcode: ['', [Validators.required]],
+      delivery_city: ['', [Validators.required]],
+      delivery_phone: ['', [Validators.required]],
+      card_number: ['', [Validators.required]],
+      card_userName: ['', [Validators.required]],
+      card_expiration: ['', [Validators.required]],
+      card_cvv: ['', [Validators.required]],
 
     })
   }
 
   onPay(){
-    this.router.navigate(['/paiement-succes'])
+    //this.router.navigate(['/paiement-succes'])
     this.validationError = [];
     console.log(this.paiementForm.value);
 
@@ -52,4 +52,6 @@ export class PaiementFormComponent {
       this.router.navigate(['/paiement-succes']);
     }
   }
+
+
 }
